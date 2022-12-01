@@ -1,0 +1,17 @@
+[package]
+name = 'mine'
+version = '1.0.0'
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.other]
+git = 'https://github.com/banool/move-examples.git'
+rev = 'main'
+subdir = 'call_other_module/other'
+
+[addresses]
+my_addr = "_"
+other_addr = "6286dfd5e2778ec069d5906cd774efdba93ab2bec71550fa69363482fbd814e7"
