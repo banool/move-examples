@@ -7,11 +7,6 @@ git = 'https://github.com/aptos-labs/aptos-core.git'
 rev = 'main'
 subdir = 'aptos-move/framework/aptos-framework'
 
-[dependencies.other]
-git = 'https://github.com/banool/move-examples.git'
-rev = 'main'
-subdir = 'call_other_module/other'
-
 [addresses]
-my_addr = "_"
+my_addr = "81e2e2499407693c81fe65c86405ca70df529438339d9da7a6fc2520142b591e"
 other_addr = "6286dfd5e2778ec069d5906cd774efdba93ab2bec71550fa69363482fbd814e7"
