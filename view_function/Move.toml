@@ -1,0 +1,11 @@
+[package]
+name = 'view_func'
+version = '1.0.0'
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'devnet'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[addresses]
+addr = "81e2e2499407693c81fe65c86405ca70df529438339d9da7a6fc2520142b591e"
