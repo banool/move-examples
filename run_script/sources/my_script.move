@@ -1,6 +1,5 @@
 script {
     use std::signer;
-    use aptos_framework::aptos_account;
     use aptos_framework::aptos_coin;
     use aptos_framework::coin;
 
@@ -11,7 +10,8 @@ script {
 
         let balance = coin::balance<aptos_coin::AptosCoin>(src_addr);
         if (balance < desired_balance) {
-            aptos_account::transfer(src, dest, desired_balance - balance);
+            let coins = coin::withdraw<aptos_coin::AptosCoin>(src, desired_balance - balance);
+            coin::deposit(dest, coins);
         };
     }
 }
