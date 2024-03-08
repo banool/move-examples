@@ -5,6 +5,7 @@ module addr::object_account {
   use aptos_framework::aptos_account;
   use aptos_framework::object::{Self, ExtendRef, Object};
 
+  /// You are not the owner of the object.
   const CALLER_NOT_OWNER: u64 = 1;
 
   // This holds the ExtendRef, which we need to get a signer for the object so we can

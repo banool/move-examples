@@ -1,5 +1,5 @@
 [package]
-name = 'my_script'
+name = 'script_module_example'
 version = '1.0.0'
 
 [dependencies.AptosFramework]
