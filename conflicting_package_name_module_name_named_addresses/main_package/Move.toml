@@ -1,0 +1,20 @@
+[package]
+name = "MainPackage"
+version = "1.0.0"
+authors = []
+
+[addresses]
+thisaddr = "_"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dependencies.OtherPackageOne]
+local = "../other_package_one"
+addr_subst = { "otheraddrone" = "otheraddr" }
+
+[dependencies.OtherPackageTwo]
+local = "../other_package_two"
+addr_subst = { "otheraddrtwo" = "otheraddr" }
