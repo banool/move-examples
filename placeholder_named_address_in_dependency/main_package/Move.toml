@@ -1,0 +1,16 @@
+[package]
+name = "MainPackage"
+version = "1.0.0"
+authors = []
+
+[addresses]
+thisaddr = "_"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dependencies.OtherPackage]
+local = "../other_package"
+
