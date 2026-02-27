@@ -15,4 +15,10 @@ module addr::view_func {
     public fun add_ints(x: u64, y: u64): u64 {
         x + y + 10
     }
+
+    // Demonstrate a private view function too.
+    #[view]
+    fun add_5(x: u64): u64 {
+        x + 5
+    }
 }
